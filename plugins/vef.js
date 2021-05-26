@@ -161,15 +161,6 @@ Asena.addCommand({pattern: 'vef ?(.*)', fromMe: true, desc: TRvefdesc}, (async (
            { mimetype: Mimetype.mp4Audio, ptt: true}
         )
     }
-else if (match[1] === 'seni hic alakadar etmez' || match[1] === 'birgün' || match[1] === 'gitsen' || match[1] === 'hatıran yeter') {
-
-        await message.client.sendMessage(
-            message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/ses/ferdi-tayfur-hatiran-yeter-yuksek-kalite.mp3"),
-            MessageType.audio, 
-           { mimetype: Mimetype.mp4Audio, ptt: true}
-        )
-    }
     else {
         await message.client.sendMessage(
             message.jid, 
